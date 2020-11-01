@@ -1,2 +1,2 @@
 # organograma
-Biblioteca para mntagem de organograma
+Biblioteca inicialmente com elementos estáticos para montagem de organograma
