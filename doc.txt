@@ -1,0 +1,94 @@
+colunaequipe
+#0, #1, #2, ..., #n
+
+
+cxsup
+cxsupcol
+cxcantosupesq
+cxmeiointerno
+cxsupcantodir
+cxinfcantoesq
+
+
+blocolateral
+    . linha lateral esquerda e linha lateral direita
+    . canto lateral esquerdo superior
+	. canto lateral esquerdo inferior
+
+blocovertical
+    . linha vertical de topo
+    . canto de topo esquerdo
+    . canto de topo direito
+
+linha horizontal
+linha vertical
+
+linha horizontal lateral esquerda
+linha horizontal lateral direita
+
+linha vertical topo
+
+linha canto esquerdo topo
+linha canto direito topo
+
+linha canto esquerda
+linha canto direita
+
+-----------------------------------------
+
+lcantoesquerdo
+lcantodireito
+
+
+
+Classe linha(linha)
+-------------------
+
+	. estilo de borda: sólido
+	. cor da borda: cinza-claro
+	. espessura: 1px
+
+
+	Classe linha horizontal direta(lhd)
+	-----------------------------------
+
+		. altura: 0
+		. borda esquerda: nula
+		. borda inferior: nula
+		. borda direita: nula
+    
+
+	Classe linha vertical direta(lvd)
+	---------------------------------
+
+		. largura: 0
+		. borda inferior: nula
+		. borda direita: nula
+		. borda superior: nula
+
+
+	Classe linha horizontal nível 01(lhnv01)
+	----------------------------------------
+
+		. borda inferior: nula
+	
+
+    Classe linha horizontal demais níveis(lhnvn)
+    --------------------------------------------
+
+        . borda superior: nula
+        . borda inferior: nula
+
+
+    Classe linha vertical nível 01(lvnv01)
+    --------------------------------------
+
+        . borda direita: nula
+
+
+    Classe linha vertical demais níveis(lvnvn)
+    ------------------------------------------
+
+        . borda esquerda: nula
+        . borda direita: nula
+
