@@ -1,172 +1,107 @@
-header{
-    line-height: 20px;
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 12px;
+:root{
+    --larguraCard: 151px;
+    --alturaCard: 91px;
+    
+    /* Atenção: recomendo definir dimensões ímpares, caso exista ponto médio. */
+    /* O Ponto médio de dimensões ímpares resultam em valores inteiros. */
+    /* Com isso, o cálculo da mediana nesta página é executado no caso ímpar. */
 }
 
-span{
-    margin-left: 5px;
-    font-size: 11px;
-}
-
-span.spnome{
-    font-weight: bold;
-}
-
-span.spcargo{
-    font-weight: bold;
-}
-
-header.branco{
-    color: white;
-}
-
-header.hdgn{
-    background-color: gray;
-}
-
-div.blocolateral{
-    display: inline-block;
-    vertical-align: bottom;
-}
-
-div.blocolateralfundo{
-    display: inline-block;
-    vertical-align: top;
-}
-
-div.blococonlateral{
+.caixaCantoEsquerdo{
     display: grid;
-    height: 91px;
-    grid-template-rows: 49.5% auto;
+    grid-template-columns: max-content auto;
 }
 
-div.caixa{
-    line-height: 1.0;
-    width: 151px;
-    height: 91px;
-    border-width: 1px;
-    border-color: gray;
-    background-color: lightgray;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-}
-
-div.emlinha{
-    display: inline-block;
-}
-
-div.bdcxequipe{
-    border-style: solid;
-}
-
-div.bdcxassistente{
-    border-style: dashed;
-}
-
-div.topo{
-    vertical-align: top;
-}
-
-div.blocotopoesq{
+.caixaOrfa{
     display: grid;
-    grid-template-columns: 50px auto;
+    grid-template-rows: max-content max-content;
+    width: max-content;
 }
 
-div.blocotopodir{
-    width: 201px;
+.caixaLateral{
+    display: grid;
+    grid-template-columns: max-content max-content;
 }
 
-div.blocotopo{
-    width: 151px;
-    height: 50px;
-}
-
-div.concantotopoesq{
-    width: auto;
-    margin-left: 75px;
-    height: 50px;
-    border-left: 1px solid gray;
-    border-top: 1px solid gray;
-}
-
-div.conlateral{
-    width: 50px;
-    border-top: 1px solid gray;
-}
-
-div.concantotopodir{
-    width: 126px;
-    height: 50px;
-    border-right: 1px solid gray;
-    border-top: 1px solid gray;
-}
-
-
-div.contopovertical{
-    margin-left: 75px;
-    height: 50px;
-    border-left: 1px solid gray;
-}
-
-div.contopo{
-    margin-left: 49.5%;
-    height: 50px;
-    border-left: 1px solid gray;
-}
-
-div.alinhado{
-    display: inline-block;
-}
-
-div.caixa{
-    width: 151px;
-    height: 91px;
-    border: 1px solid gray;
-}
-
-div.concantolateralesq{
-    width: 50px;
-    height: 46px;
-    border-left: 1px solid gray;
-    border-top: 1px solid gray;
+.caixa{
+    display: grid;
+    grid-template-columns: max-content max-content;
 }
 
 div.separador{
+    height: 30px;
+}
+
+.tetoCaixaSupEsq{
     height: 50px;
+    width: auto;
+}
+
+.tetoCaixa{
+    height: 50px;
+    width: auto;
+}
+
+.card{
+    height: var(--alturaCard);
+    width: var(--larguraCard);
+    border: 1px solid gray;
+}
+
+.lateralCaixa{
+    width: 50px;
+}
+
+.bordagenerica{
+    border: 1px dotted red;
+}
+
+
+/* conectores */
+
+.conCantoSupEsquerdo{
+    width: auto;
+    margin-left: calc((var(--larguraCard) - 1px) / 2);
+    height: 100%;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+.conVerticalSuperior{
     width: 100%;
-    background-color:darkslateblue;
-}
-
-div.blcaixadir{
-    display: grid;
-    grid-template-columns: auto 50px 151px;
-}
-
-div.blococolunameio{
+    height: 100%;
+    margin-left: calc((var(--larguraCard) + 1px) / 2);
     border-left: 1px solid gray;
 }
 
-div.confundo{
-    width: 50px;
+.conCantoSupDireito{
+    width: calc((var(--larguraCard) + 1px) / 2);
+    height: 100%;
+    margin-left: 0;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.conLatMargem{
+    height: calc((var(--alturaCard) - 1px) / 2);
+}
+
+.conLatCantoEsq{
+    width: 100%;
+    height: calc((var(--alturaCard) + 1px) / 2);
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+.conLatFundo{
+    width: 100%;
+    height: calc((var(--alturaCard) + 1px) / 2);
     border-bottom: 1px solid gray;
     border-left: 1px solid gray;
 }
 
-div.margemesq{
-    margin-left: 50px;
-}
-
-div.margemsup{
-    margin-top: 20px;
-}
-
-div.margeminf{
-    margin-bottom: 20px;
-}
-
-div.topomeio{
-    border-top: 1px solid gray;
+.conLinhaLateral{
+    width: 100%;
+    height: calc((var(--alturaCard) + 1px) / 2);
+    border-bottom: 1px solid gray;
 }

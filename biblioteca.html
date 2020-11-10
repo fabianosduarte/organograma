@@ -3,284 +3,89 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Organograma</title>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Teste</title>
     </head>
-    <style>
-
-        body{
-            background-color:darkslategrey;
-        }
-
-        header{
-            line-height: 20px;
-            width: 100%;
-            text-align: center;
-            font-weight: bold;
-            font-size: 12px;
-        }
-
-        span{
-            margin-left: 5px;
-            font-size: 11px;
-        }
-
-        span.spnome{
-            font-weight: bold;
-        }
-
-        span.spcargo{
-            font-weight: bold;
-        }
-
-        header.branco{
-            color: white;
-        }
-        
-        header.hdgn{
-            background-color: gray;
-        }
-
-        div.blocolateral{
-            display: inline-block;
-            vertical-align: bottom;
-        }
-
-        div.blococonlateral{
-            display: grid;
-            height: 91px;
-            grid-template-rows: 49.5% auto;
-        }
-
-        div.caixa{
-            line-height: 1.0;
-            width: 151px;
-            height: 91px;
-            border-width: 1px;
-            border-color: gray;
-            background-color: lightgray;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: left;
-        }
-
-        div.caixaemlinha{
-            display: inline-block;
-        }
-
-        div.bdcxequipe{
-            border-style: solid;
-        }
-
-        div.bdcxassistente{
-            border-style: dashed;
-        }
-
-        div.topo{
-            vertical-align: top;
-        }
-
-        div.blocotopoesq{
-            display: grid;
-            grid-template-columns: 50px auto;
-        }
-
-        div.blocotopodir{
-            width: 201px;
-        }
-
-        div.blocotopo{
-            width: 151px;
-            height: 50px;
-        }
-
-        div.concantotopoesq{
-            width: auto;
-            margin-left: 75px;
-            height: 50px;
-            border-left: 1px solid gray;
-            border-top: 1px solid gray;
-        }
-
-        div.conlateral{
-            width: 50px;
-            border-top: 1px solid gray;
-        }
-
-        div.confundo{
-            width: 50px;
-            border-bottom: 1px solid gray;
-            border-left: 1px solid gray;
-        }
-
-        div.concantotopodir{
-            width: 126px;
-            height: 50px;
-            border-right: 1px solid gray;
-            border-top: 1px solid gray;
-        }
-
-        div.contopovertical{
-            margin-left: 75px;
-            height: 50px;
-            border-left: 1px solid gray;
-        }
-
-        div.contopo{
-            margin-left: 49.5%;
-            height: 50px;
-            border-left: 1px solid gray;
-        }
-
-        div.alinhado{
-            display: inline-block;
-        }
-
-        div.caixa{
-            width: 151px;
-            height: 91px;
-            border: 1px solid gray;
-        }
-
-        div.concantolateralesq{
-            width: 50px;
-            height: 46px;
-            border-left: 1px solid gray;
-            border-top: 1px solid gray;
-        }
-
-        div.separador{
-            height: 50px;
-            width: 100%;
-            background-color:darkslateblue;
-        }
-
-        div.blcaixadir{
-            display: grid;
-            grid-template-columns: auto 50px 151px;
-        }
-
-    </style>
 
     <body>
 
-        <div class="blocotopoesq">
-            <div></div>
-            <div class="concantotopoesq"></div>
-        </div>
-
-        <div>
-            <div class="blocolateral">
-                <div class="blococonlateral">
-                    <div></div>
-                    <div class="concantolateralesq"></div>
-                </div>
-            </div><!--
-            --><div class="caixa bdcxequipe caixaemlinha">
-                <header class="hdgn branco">GERÊNCIA 01</header>
-                <span class="spnome">Fulano de Tal</span><br>
-                <span class="spcargo">Cargo</span><br>
-                <span>Tel.: (21) 99234-5678</span><br>
-                <span>Id: 0123</span>
-            </div>
-        </div>
-
-        <div class="separador"></div>
-
-        <div>
-            <div class="blocotopoesq">
+        <div id="caixaSupEsq">
+            <div class="caixaCantoEsquerdo">
                 <div></div>
-                <div class="contopovertical"></div>
-            </div>
-            <div>
-                <div class="blocolateral">
-                    <div class="blococonlateral">
-                        <div></div>
-                        <div class="concantolateralesq"></div>
-                    </div>
-                </div><!--
-                --><div class="caixa bdcxequipe caixaemlinha">
-                    <header class="hdgn branco">GERÊNCIA 02</header>
-                    <span class="spnome">Fulano de Tal</span><br>
-                    <span class="spcargo">Cargo</span><br>
-                    <span>Tel.: (21) 99234-5678</span><br>
-                    <span>Id: 0123</span>
+                <div class="tetoCaixaSupEsq">
+                    <div class="conCantoSupEsquerdo"></div>
                 </div>
+                <div class="lateralCaixa">
+                    <div class="conLatMargem"></div>
+                    <div class="conLatCantoEsq"></div>
+                </div>
+                <div class="card">canto sup esq - reparar</div>
             </div>
         </div>
 
         <div class="separador"></div>
 
-        <div>
-            <div class="blocotopodir">
-                <div class="concantotopodir"></div>
-            </div>
-            <div>
-                <div class="blocolateral">
-                    <div class="blococonlateral">
-                        <div></div>
-                        <div class="concantolateralesq"></div>
-                    </div>
-                </div><!--
-                --><div class="caixa bdcxequipe emlinha">
-                    <header class="hdgn branco">GERÊNCIA 03</header>
-                    <span class="spnome">Fulano de Tal</span><br>
-                    <span class="spcargo">Cargo</span><br>
-                    <span>Tel.: (21) 99234-5678</span><br>
-                    <span>Id: 0123</span>
+        <div id="cxOrfa">
+            <div class="caixaOrfa">
+                <div class="tetoCaixa">
+                    <div class="conVerticalSuperior"></div>
                 </div>
+                <div class="card">cxOrfa</div>
+            </div>
+        </div>
+        
+        <div class="separador"></div>
+
+        <div id="caixaLatCantoEsq">
+            <div class="caixa">
+                <div></div>
+                <div class="tetoCaixa">
+                    <div class="conVerticalSuperior"></div>
+                </div>
+                <div class="lateralCaixa">
+                    <div class="conLatMargem"></div>
+                    <div class="conLatCantoEsq"></div>
+                </div>
+                <div class="card">caixaLatCantoEsq</div>
+            </div>
+        </div>
+        
+        <div class="separador"></div>
+
+        <div id="caixaFundo">
+            <div class="caixaLateral">
+                <div class="lateralCaixa">
+                    <div class="conLatFundo"></div>
+                </div>
+                <div class="card">caixaFundo</div>
             </div>
         </div>
 
         <div class="separador"></div>
 
-        <div>
-            <div class="blocotopo">
-                <div class="contopo"></div>
+        <div id="caixaConLateral"></div>
+            <div class="caixaLateral">
+                <div class="lateralCaixa">
+                    <div class="conLinhaLateral"></div>
+                </div>
+                <div class="card">caixaConLateral</div>
             </div>
-            <div class="caixa bdcxequipe caixaemlinha">
-                <header class="hdgn branco">GERÊNCIA 04</header>
-                <span class="spnome">Fulano de Tal</span><br>
-                <span class="spcargo">Cargo</span><br>
-                <span>Tel.: (21) 99234-5678</span><br>
-                <span>Id: 0123</span>
-            </div>
-        </div>
 
         <div class="separador"></div>
 
-        <div>
-            <div class="blocolateral">
-                <div class="blococonlateral">
-                    <div></div>
-                    <div class="conlateral"></div>
+        <div id="caixaCantoDir">
+            <div class="caixa">
+                <div></div>
+                <div class="tetoCaixa">
+                    <div class="conCantoSupDireito"></div>
                 </div>
-            </div><!--
-            --><div class="caixa bdcxequipe caixaemlinha">
-                <header class="hdgn branco">GERÊNCIA 05</header>
-                <span class="spnome">Fulano de Tal</span><br>
-                <span class="spcargo">Cargo</span><br>
-                <span>Tel.: (21) 99234-5678</span><br>
-                <span>Id: 0123</span>
+                <div class="lateralCaixa">
+                    <div class="conLatMargem"></div>
+                    <div class="conLatCantoEsq"></div>
+                </div>
+                <div class="card">caixaCantoDir</div>
             </div>
         </div>
-
-        <div class="separador"></div>
-
-        <div>
-            <div class="blocolateral">
-                <div class="blococonlateral">
-                    <div class="confundo"></div>
-                    <div></div>
-                </div>
-            </div><!--
-            --><div class="caixa bdcxequipe caixaemlinha">
-                <header class="hdgn branco">GERÊNCIA 06</header>
-                <span class="spnome">Fulano de Tal</span><br>
-                <span class="spcargo">Cargo</span><br>
-                <span>Tel.: (21) 99234-5678</span><br>
-                <span>Id: 0123</span>
-            </div>
-        </div>
-
+        
     </body>
-
 </html>
