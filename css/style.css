@@ -5,6 +5,8 @@
     /* Atenção: recomendo definir dimensões ímpares, caso exista ponto médio. */
     /* O Ponto médio de dimensões ímpares resultam em valores inteiros. */
     /* Com isso, o cálculo da mediana nesta página é executado no caso ímpar. */
+
+    --margem-vertical: 30px;
 }
 
 .caixaCantoEsquerdo{
@@ -56,6 +58,23 @@ div.separador{
     border: 1px dotted red;
 }
 
+.blocoColunaMeio{
+    border-left: 1px solid gray;
+    padding-top: var(--margem-vertical);
+    padding-bottom: var(--margem-vertical);
+}
+
+.separadorHorizontal{
+    height: var(--margem-vertical);
+}
+
+.emLinha{
+    display: inline-block;
+}
+
+.blocoComposto{
+    height: var(--alturaCard);
+}
 
 /* conectores */
 
@@ -88,7 +107,7 @@ div.separador{
 
 .conLatCantoEsq{
     width: 100%;
-    height: calc((var(--alturaCard) + 1px) / 2);
+    height: 100%;
     border-top: 1px solid gray;
     border-left: 1px solid gray;
 }
