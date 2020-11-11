@@ -147,3 +147,7 @@ div.separador{
     height: calc((var(--alturaCard) + 1px) / 2);
     border-bottom: 1px solid gray;
 }
+
+.linhaExtensoraTeto{
+    border-top: 1px solid gray;
+}
