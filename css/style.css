@@ -64,8 +64,26 @@ div.separador{
     padding-bottom: var(--margem-vertical);
 }
 
+.blocoColunasMeio{
+    display: inline-block;
+    vertical-align: top;
+    border-top: 1px solid gray;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 .separadorHorizontal{
     height: var(--margem-vertical);
+}
+
+.colunaMeio{
+    vertical-align: top;
+    display: inline-block;
+}
+
+.sepMargemVertical{
+    display: inline-block;
+    width: 50px;
 }
 
 .emLinha{
@@ -74,6 +92,11 @@ div.separador{
 
 .blocoComposto{
     height: var(--alturaCard);
+}
+
+.blocoColunaPiso{
+    display: inline-block;
+    vertical-align: top;
 }
 
 /* conectores */
