@@ -30,6 +30,20 @@
     grid-template-columns: max-content max-content;
 }
 
+.conLateralCaixaTopo{
+    vertical-align: bottom;
+    width: var(--larguraCard);
+    height: calc((var(--alturaCard) + 1px) / 2);
+    border-bottom: 1px solid gray;
+}
+
+.conLatCxTopoAssist{
+    vertical-align: bottom;
+    width: var(--larguraCard);
+    height: calc((var(--alturaCard) + 1px) / 2);
+    border-bottom: 1px dashed gray;
+}
+
 div.separador{
     height: 30px;
 }
@@ -48,6 +62,18 @@ div.separador{
     height: var(--alturaCard);
     width: var(--larguraCard);
     border: 1px solid gray;
+}
+
+.blocoCardTopo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardAssistente{
+    height: var(--alturaCard);
+    width: var(--larguraCard);
+    border: 1px dashed gray;
 }
 
 .lateralCaixa{
@@ -152,10 +178,57 @@ div.separador{
     border-top: 1px solid gray;
 }
 
+.lvCentralTopo{
+    display: inline-block;
+    height: 100%;
+    border-left: 1px solid gray;
+}
+
+.equipeTopo{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#topo{
+    justify-content: center;
+    width: 1750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #piso{
     display: flex;
     justify-content: center;
     width: 1750px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.blExternoEquipeTopo{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    height: auto;
+}
+
+.blocoCaixa{
+    display: inline-block;
+    height: 100%;
+}
+
+.caixaInterna{
+    width: 300px;
+    height: 100%;
+}
+
+.caixaLinha{
+    height: 400px;
+    border-left: 1px solid gray;
+}
+
+.margemCaixatopo{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
