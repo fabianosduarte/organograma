@@ -1,6 +1,7 @@
 :root{
     --larguraCard: 151px;
     --alturaCard: 91px;
+    --larguraMeio: 76px;
     
     /* Atenção: recomendo definir dimensões ímpares, caso exista ponto médio. */
     /* O Ponto médio de dimensões ímpares resultam em valores inteiros. */
@@ -54,6 +55,11 @@ div.separador{
 }
 
 .tetoCaixa{
+    height: 50px;
+    width: auto;
+}
+
+.pisoCaixa{
     height: 50px;
     width: auto;
 }
@@ -125,6 +131,11 @@ div.separador{
     vertical-align: top;
 }
 
+.batente{
+    display: inline-block;
+    width: var(--larguraMeio);
+}
+
 /* conectores */
 
 .conCantoSupEsquerdo{
@@ -136,6 +147,13 @@ div.separador{
 }
 
 .conVerticalSuperior{
+    width: 100%;
+    height: 100%;
+    margin-left: calc((var(--larguraCard) + 1px) / 2);
+    border-left: 1px solid gray;
+}
+
+.conVerticalInferior{
     width: 100%;
     height: 100%;
     margin-left: calc((var(--larguraCard) + 1px) / 2);
