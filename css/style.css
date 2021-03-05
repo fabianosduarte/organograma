@@ -21,6 +21,16 @@
     width: max-content;
 }
 
+.caixaOrfaPai{
+    display: grid;
+    grid-template-rows: max-content auto;
+}
+
+.caixaOrfaPaiEsq{
+    display: grid;
+    grid-template-rows: auto max-content;
+}
+
 .caixaLateral{
     display: grid;
     grid-template-columns: max-content max-content;
@@ -47,6 +57,7 @@
 
 div.separador{
     height: 30px;
+    background-color: #fff6f8;
 }
 
 .tetoCaixaSupEsq{
