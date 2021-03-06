@@ -71,7 +71,7 @@ div.separador{
 }
 
 .pisoCaixa{
-    height: 50px;
+    height: 30px;
     width: auto;
 }
 
@@ -149,6 +149,10 @@ div.separador{
 
 .batente{
     display: inline-block;
+    width: var(--larguraMeio);
+}
+
+.batentecoluna{
     width: var(--larguraMeio);
 }
 
